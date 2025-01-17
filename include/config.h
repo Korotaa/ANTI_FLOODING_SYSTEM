@@ -1,0 +1,34 @@
+
+//LED GPIO
+#define LED_GPIO 2
+
+//POMPE GPIO
+#define POMPE_GPIO 27
+
+//CAPTEUR DE NIVEAU GPIO
+#define FLOAT_SENSOR_GPIO 26
+
+//ULTRASONIC SENSOR GPIOS
+#define TRIG_GPIO 25
+#define ECHO_GPIO 33
+
+//ALARM GPIO 
+#define ALARM_GPIO 12
+
+//MOTOR GPIO
+#define MOTOR_GPIO 14
+
+//UART COMMUNICATION SPEED
+#define BAUDERATE 115200
+
+//WIFI INFO
+extern const char  * SSID;
+extern const char * PASSWORD;
+
+//MQTT CONFIG
+/*#define RASPBERRYPI_IP
+#define BROKERADDRESS RASPBERRYPI_IP
+#define PORT 1883
+#define USERNAME root
+#define PASSWORD root
+*/
