@@ -29,7 +29,7 @@ void pompeInit(){
  */
 void startPompe(){
     digitalWrite(POMPE_GPIO, HIGH);
-    Serial.println("Pompe démarrer")
+    Serial.println("Pompe démarrer");
 }
 /**
  * @brief Cette fonction arrête la pompe
