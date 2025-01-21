@@ -2,7 +2,7 @@
 #define ULTRASONIC_H
 
 void initUltrasonic();
-float readLevel();
+float readLevel1();
 float readLevel2();
 
 #endif // ULTRASONIC_H

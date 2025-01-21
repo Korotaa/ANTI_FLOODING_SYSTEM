@@ -1,7 +1,9 @@
 /**
  * @file pompeControl.cpp
  * @author your name (you@domain.com)
- * @brief Définis des fonctions permettant de contrôler la pompe
+ * @paragraph Définis des fonctions permettant de contrôler la pompe. La pompe est commandée
+ * via un transistor PNP. Il faut donc un niveau logique LOW appliquée à la base du transistor 
+ * pour démarrer la pompe
  * @version 0.1
  * @date 2025-01-17
  * 
@@ -28,7 +30,7 @@ void pompeInit(){
  * @return void
  */
 void startPompe(){
-    digitalWrite(POMPE_GPIO, HIGH);
+    digitalWrite(POMPE_GPIO, LOW);
     Serial.println("Pompe démarrer");
 }
 /**
@@ -37,6 +39,6 @@ void startPompe(){
  * @return void
  */
 void stopPompe(){
-    digitalWrite(POMPE_GPIO, LOW);
+    digitalWrite(POMPE_GPIO, HIGH);
     Serial.println("Pompe arrêter");
 }

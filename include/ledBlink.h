@@ -3,4 +3,4 @@
 
 void blinkLed(char pin);
 
-#endif // MYMATH_H
+#endif

@@ -26,6 +26,7 @@ void waterLevelSensorInit(){
  * @return void
  */
 int waterLevel(){
+    waterLevelSensorInit();
     int sensorState = digitalRead(FLOAT_SENSOR_GPIO);
     if (sensorState == LOW) return 0;
     else if(sensorState == HIGH) return 1;

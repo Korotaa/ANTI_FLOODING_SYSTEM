@@ -9,18 +9,55 @@
  * 
  */
 #include <Arduino.h>
+#include  <WiFi.h>
 #include "ledBlink.h"
 #include "config.h"
 #include "wificonfig.h"
-#include<WiFi.h>
+#include "ultrasonic.h"
+#include "configOLED.h"
+#include "alarm.h"
+#include "floatLevelSensor.h"
+#include "pompeControl.h"
+
 
 void setup() {
   Serial.begin(BAUDERATE);
   pinMode(LED_GPIO, OUTPUT);
   wifiConnect();
+  initUltrasonic();
+  setupOLED();
+  pompeInit();
+  initAlarm();
+  display.setCursor(0, 0);
+  display.clearDisplay();
+  display.setTextSize(2.75);
+  display.println("korota:");
+  //display.setTextSize(3);
+  //display.println(timeString);
+  display.display();
 }
 
 void loop() {
+  
+  if(waterLevel()) 
+  {
+    startPompe();
+    blinkLed(LED_GPIO);
+    onAlarm();
+    delay(500);
+    //delay(5000);
+    }
+  else {
+    stopPompe();
+    offAlarm();
+    delay(2000);
+  }
+  //Serial.print("Distance[cm] = ");
+  //Serial.println(readLevel1());
+  /*onAlarm();
+  delay(1000);
+  offAlarm();
+  delay(1000);
+  */
 
-  blinkLed(LED_GPIO);
 }
