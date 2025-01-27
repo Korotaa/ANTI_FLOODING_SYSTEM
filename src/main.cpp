@@ -18,12 +18,16 @@
 #include "alarm.h"
 #include "floatLevelSensor.h"
 #include "pompeControl.h"
+#include "configMQTT.h"
 
 
 void setup() {
   Serial.begin(BAUDERATE);
   pinMode(LED_GPIO, OUTPUT);
+  //WiFi connexion
   wifiConnect();
+  //MQTT
+  setupMQTT();
   initUltrasonic();
   setupOLED();
   pompeInit();
@@ -38,7 +42,7 @@ void setup() {
 }
 
 void loop() {
-  
+  connectToServerMQTT();
   if(waterLevel()) 
   {
     startPompe();

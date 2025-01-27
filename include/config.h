@@ -2,23 +2,23 @@
 
 
 //LED GPIO
-#define LED_GPIO 2
+#define LED_GPIO 32
 
 //POMPE GPIO
-#define POMPE_GPIO 27
+#define POMPE_GPIO 26
 
 //CAPTEUR DE NIVEAU GPIO
-#define FLOAT_SENSOR_GPIO 26
+#define FLOAT_SENSOR_GPIO 25
 
 //ULTRASONIC SENSOR GPIOS
-#define TRIG_GPIO 25
-#define ECHO_GPIO 33
+#define TRIG_GPIO 33
+#define ECHO_GPIO 35
 
 //ALARM GPIO 
-#define ALARM_GPIO 12
+#define ALARM_GPIO 23
 
 //MOTOR GPIO
-#define MOTOR_GPIO 14
+#define MOTOR_GPIO 27
 
 //SIM800L GPIO
 #define SIM800L_RX_GPIO 1 
@@ -39,9 +39,8 @@ extern const char  * SSID;
 extern const char * PASSWORD;
 
 //MQTT CONFIG
-/*#define RASPBERRYPI_IP
+#define RASPBERRYPI_IP "192.168.11.120"
 #define BROKERADDRESS RASPBERRYPI_IP
 #define PORT 1883
-#define USERNAME root
-#define PASSWORD root
-*/
+//#define USERNAME root
+//#define PASSWORD root
