@@ -42,5 +42,7 @@ extern const char * PASSWORD;
 #define RASPBERRYPI_IP "192.168.11.120"
 #define BROKERADDRESS RASPBERRYPI_IP
 #define PORT 1883
+#define SEND_DATA_TOPIC "/sensors/states"
+#define DATA_RECEIVED_TOPIC "/mqttServer/commands"
 //#define USERNAME root
 //#define PASSWORD root

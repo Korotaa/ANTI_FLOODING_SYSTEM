@@ -4,5 +4,6 @@
 void setupMQTT();
 void connectToServerMQTT();
 void callback(char* topic, byte* payload, unsigned int length);
+void sendDataToServerMQTT(char []);
 
 #endif

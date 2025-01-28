@@ -39,9 +39,9 @@ void connectToServerMQTT(){
         Serial.println();
         Serial.println("ESP32 dev is onnected to MQTT server");
         // Once connected, publish an announcement...
-        CLIENT.publish("outTopic", "Bonjour la team anti_innondation");
+        CLIENT.publish(SEND_DATA_TOPIC, "Bonjour la team anti_innondation");
         // ... and resubscribe
-        CLIENT.subscribe("inTopic");
+        CLIENT.subscribe(DATA_RECEIVED_TOPIC);
     } else {
         Serial.print("failed, rc=");
         Serial.print(CLIENT.state());
@@ -50,4 +50,9 @@ void connectToServerMQTT(){
         delay(5000);
     }
   }
+}
+
+void sendDataToServerMQTT(char data[]){
+    CLIENT.publish(SEND_DATA_TOPIC, data);
+    Serial.println("Sent");
 }

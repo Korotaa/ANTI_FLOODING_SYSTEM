@@ -22,7 +22,7 @@
  */
 void pompeInit(){
     pinMode(POMPE_GPIO, OUTPUT);
-    digitalWrite(POMPE_GPIO, LOW);
+    digitalWrite(POMPE_GPIO, HIGH);
 }
 /**
  * @brief Cette fonction Demarre la pompe
