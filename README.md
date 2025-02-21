@@ -12,6 +12,6 @@
 ##  III. Architecture
 ![Architecture](./architecture.png)
 ## IV. schéma électronique du End-device
-![[Screenshot 2025-02-21 at 23.45.15.png]]
+![Schematic](./schematic.png)
 ## V. PCB
-![[Screenshot 2025-02-21 at 23.42.12.png]]
+![PCB board](board.png)
