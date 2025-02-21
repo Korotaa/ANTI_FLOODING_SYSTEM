@@ -10,9 +10,9 @@
 2. Accessibilité : Matériel standard et technologies abordables.
 3. Évolutivité : Possibilité d’intégrer des fonctionnalités avancées comme la communication IoT.
 ##  III. Architecture
-![Architecture](./architecture.png)
+![Architecture](./images/architecture.png)
 ## IV. schéma électronique du End-device
-![Schematic](./schematic.png)
+![Schematic](./images/schematic.png)
 ## V. PCB
 **NB : Le pcb est conçu pour faciliter le prototypage sur PCB double face perforé**
-![PCB board](board.png)
+![PCB board](./images/board.png)
