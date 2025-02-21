@@ -10,7 +10,7 @@
 2. Accessibilité : Matériel standard et technologies abordables.
 3. Évolutivité : Possibilité d’intégrer des fonctionnalités avancées comme la communication IoT.
 ##  III. Architecture
-![[ANTI_FLOODING_SYSTEM-main/architecture.png]]
+![Beautiful Sunset](./architecture.svg)
 ## IV. schéma électronique du End-device
 ![[Screenshot 2025-02-21 at 23.45.15.png]]
 ## V. PCB
