@@ -14,4 +14,5 @@
 ## IV. schéma électronique du End-device
 ![Schematic](./schematic.png)
 ## V. PCB
+**NB : Le pcb est conçu pour faciliter le prototypage sur PCB double face perforé**
 ![PCB board](board.png)
